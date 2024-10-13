@@ -1,4 +1,4 @@
-import BackgroundRemover, { OnProcessCompleteResult, BackgroundRemoverProps, ShowButtonsProps } from './components/BackgroundRemover';
+import BackgroundRemover, { OnProcessCompleteResult, BackgroundRemoverProps, ShowButtonsProps } from './BackgroundRemover';
 
 function App() {
   const handleProcessComplete = ({ originalImage, processedImage, maskImage }: OnProcessCompleteResult) => {

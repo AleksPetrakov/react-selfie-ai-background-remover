@@ -1,6 +1,6 @@
 {
   "name": "react-selfie-ai-background-remover",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A React component that removes the background from images using TensorFlow.js and the MediaPipe Selfie Segmentation model.",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",

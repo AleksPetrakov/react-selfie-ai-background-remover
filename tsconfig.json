@@ -4,7 +4,7 @@
     "module": "ESNext",
     "jsx": "react",
     "declaration": true,
-    "declarationDir": "dist/types",
+    "declarationDir": "dist",
     "outDir": "dist",
     "strict": true,
     "moduleResolution": "Node",

@@ -1,9 +1,9 @@
-import BackgroundRemover from './components/BackgroundRemover';
+import BackgroundRemover from './BackgroundRemover';
 
 export type {
   OnProcessCompleteResult,
   ShowButtonsProps,
   BackgroundRemoverProps,
-} from './components/BackgroundRemover';
+} from './BackgroundRemover';
 
 export default BackgroundRemover;
