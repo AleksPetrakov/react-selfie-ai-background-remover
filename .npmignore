@@ -1,7 +1,14 @@
-assets/react.svg
-
-src/App.tsx
-src/App.tsx
-src/index.css
-src/main.tsx
+# Exclude build folder and other unnecessary files
+build/
+node_modules/
+assets/
+src/
+.vscode/
+.git/
+.gitignore
+package-lock.json
+tsconfig.json
+tsconfig.node.json
+rollup.config.js
+vite.config.js
 
