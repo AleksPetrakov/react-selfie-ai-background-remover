@@ -214,10 +214,18 @@ const BackgroundRemover: React.FC<BackgroundRemoverProps> = ({
         onChange={handleImageUpload}
       />
 
+
       {showButtons!.upload && !processedImage && (
-        <div onClick={handleButtonClick} style={{ cursor: 'pointer' }} className="ai-bg-remover__upload-button">
-          {uploadButton ? uploadButton : <button type="button">Upload Image</button>}
-        </div>
+        uploadButton ? React.cloneElement(uploadButton as ReactNode, {
+          onClick: handleButtonClick,
+          className: `ai-bg-remover__upload-button ${uploadButton.props.className}`
+        }) : <button
+          type="button"
+          className="ai-bg-remover__upload-button"
+          onClick={handleButtonClick}
+        >
+          Upload Image
+        </button>
       )}
 
       <canvas ref={canvasRef} style={{ display: 'none' }} className="ai-bg-remover__canvas" />
@@ -238,7 +246,10 @@ const BackgroundRemover: React.FC<BackgroundRemoverProps> = ({
           {showButtons!.download && (
             downloadButton ? (
               // If a custom download button is provided, render it
-              downloadButton
+              React.cloneElement(downloadButton as ReactNode, {
+                onClick: () => downloadImage(processedImage!, imageName!),
+                className: `ai-bg-remover__download-button ${downloadButton.props.className}`
+              })
             ) : (
               // Default download button
               <button
@@ -256,7 +267,10 @@ const BackgroundRemover: React.FC<BackgroundRemoverProps> = ({
           {showButtons!.downloadMask && maskImage && (
             downloadMaskButton ? (
               // If a custom mask download button is provided, render it
-              downloadMaskButton
+              React.cloneElement(downloadMaskButton as ReactNode, {
+                onClick: () => downloadImage(maskImage!, maskImageName!),
+                className: `ai-bg-remover__download-mask-button ${downloadMaskButton.props.className}`
+              })
             ) : (
               // Default mask download button
               <button
@@ -277,7 +291,10 @@ const BackgroundRemover: React.FC<BackgroundRemoverProps> = ({
         showButtons!.download && (
           clearButton ? (
             // If a custom download button is provided, render it
-            clearButton
+            React.cloneElement(clearButton as ReactNode, {
+              onClick: clearImages,
+              className: `ai-bg-remover__clear-button ${clearButton.props.className}`
+            })
           ) : (
             // Default download button
             <button
