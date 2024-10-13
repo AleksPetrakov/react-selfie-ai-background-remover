@@ -2,6 +2,12 @@
 
 `react-selfie-ai-background-remover` is a React component that automatically removes the background from images using TensorFlow.js and the MediaPipe Selfie Segmentation model. It provides an easy-to-use interface for users to upload an image, process it to remove the background, and download the result.
 
+## Demo
+
+The live demo for this component can be accessed at:
+- [GitHub Pages Live Demo](https://alekspetrakov.github.io/react-selfie-ai-background-remover-demo/)
+
+
 ## Table of Contents
 
 - [Features](#features)
@@ -13,7 +19,6 @@
     - [Processing Options](#processing-options)
 - [Styling Customization](#styling-customization)
     - [CSS Classes](#css-classes)
-    - [Example Styling](#example-styling)
 - [Events](#events)
     - [onProcessComplete](#onprocesscomplete)
     - [onError](#onerror)
