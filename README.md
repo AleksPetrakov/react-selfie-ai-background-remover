@@ -132,37 +132,6 @@ You can customize the styles of the component by targeting the following CSS cla
 - `.ai-bg-remover__download-mask-button`: The download mask image button.
 - `.ai-bg-remover__clear-button`: The clear image button.
 
-### Example Styling
-
-```css
-/* Custom styles for the BackgroundRemover component */
-
-.ai-bg-remover {
-  text-align: center;
-  margin: 20px;
-}
-
-.ai-bg-remover__upload-button {
-  cursor: pointer;
-  margin-bottom: 20px;
-}
-
-.ai-bg-remover__image {
-  max-width: 100%;
-  margin-top: 20px;
-}
-
-.ai-bg-remover__download-buttons {
-  margin-top: 20px;
-}
-
-.ai-bg-remover__download-button,
-.ai-bg-remover__download-mask-button,
-.ai-bg-remover__clear-button {
-  margin: 5px;
-}
-```
-
 ## Events
 
 ### onProcessComplete
