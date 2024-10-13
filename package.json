@@ -1,0 +1,63 @@
+{
+  "name": "react-selfie-ai-background-remover",
+  "version": "1.0.0",
+  "description": "A React component that removes the background from images using TensorFlow.js and the MediaPipe Selfie Segmentation model.",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "react",
+    "background-removal",
+    "tensorflow",
+    "ai",
+    "image-processing",
+    "mediapipe",
+    "selfie-segmentation"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AleksPetrakov/react-selfie-ai-background-remover.git"
+  },
+  "author": "Aleksandr Petrakov <alex.g.petrakov@gmail.com> (https://www.linkedin.com/in/agpetrakov/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AleksPetrakov/react-selfie-ai-background-remover/issues"
+  },
+  "homepage": "https://github.com/AleksPetrakov/react-selfie-ai-background-remover#readme",
+  "scripts": {
+    "dev": "vite",
+    "build": "rollup -c",
+    "lint": "eslint .",
+    "preview": "vite preview"
+  },
+  "peerDependencies": {
+    "react": "^16.8.0 || ^17.0.0 || ^18.0.0",
+    "react-dom": "^16.8.0 || ^17.0.0 || ^18.0.0"
+  },
+  "dependencies": {
+    "@tensorflow-models/body-segmentation": "^1.0.2",
+    "@tensorflow/tfjs": "^4.21.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.11.1",
+    "@rollup/plugin-commonjs": "^28.0.0",
+    "@rollup/plugin-node-resolve": "^15.3.0",
+    "@types/react": "^18.3.10",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.3.2",
+    "eslint": "^9.11.1",
+    "eslint-plugin-react-hooks": "^5.1.0-rc.0",
+    "eslint-plugin-react-refresh": "^0.4.12",
+    "globals": "^15.9.0",
+    "rollup": "^3.29.5",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-typescript2": "^0.34.1",
+    "typescript": "^5.5.3",
+    "vite": "^5.4.8"
+  }
+}
